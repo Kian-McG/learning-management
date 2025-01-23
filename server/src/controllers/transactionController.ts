@@ -42,7 +42,7 @@ export const createStripePaymentIntent = async (
   let { amount } = req.body;
 
   if (!amount || amount <= 0) {
-    amount = 50;
+    amount = 100;
   }
 
   try {
